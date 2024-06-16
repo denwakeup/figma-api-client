@@ -1,0 +1,71 @@
+{
+    "name": "figma-api-client",
+    "version": "2.0.1",
+    "description": "Figma js typed api",
+    "files": [
+        "lib"
+    ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "build": "npm run clean:dist && rollup -c ./tools/rollup.config.mjs",
+        "clean:dist": "npx rimraf lib",
+        "clean:modules": "npx rimraf ./node_modules",
+        "clean": "pnpm run clean:dist && pnpm run clean:modules",
+        "types:check": "tsc --noEmit",
+        "lint": "eslint \"**/*.{ts,tsx,js,jsx}\" --max-warnings=0 --fix --cache --ignore-path .gitignore",
+        "prepare": "husky",
+        "prepack": "npm run build"
+    },
+    "keywords": [
+        "figma",
+        "figmajs",
+        "json",
+        "api",
+        "parser",
+        "ast",
+        "typed"
+    ],
+    "author": "Denny K",
+    "license": "MIT",
+    "private": false,
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "dependencies": {
+        "@figma/rest-api-spec": "^0.15.0",
+        "cross-fetch": "^4.0.0",
+        "query-string": "^7.1.3"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "0.4.4",
+        "@typescript-eslint/parser": "^5.62.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^8.10.0",
+        "eslint-config-react-app": "^7.0.1",
+        "eslint-import-resolver-typescript": "^3.6.1",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-prettier": "^5.0.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.7",
+        "prettier": "^3.3.2",
+        "rimraf": "^5.0.7",
+        "rollup": "^4.0.2",
+        "rollup-plugin-ts": "3.4.5",
+        "typescript": "^5.4.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/denwakeup/figma-api.git"
+    },
+    "lint-staged": {
+        "./{src,tools}/**/*.{js,jsx,ts,tsx,md}": [
+            "prettier --write",
+            "eslint --fix"
+        ]
+    },
+    "packageManager": "npm@10.7.0"
+}
