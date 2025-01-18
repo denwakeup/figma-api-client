@@ -12,7 +12,7 @@
         "build": "npm run clean:dist && rollup -c ./tools/rollup.config.js",
         "clean:dist": "npx rimraf lib",
         "clean:modules": "npx rimraf ./node_modules",
-        "clean": "npm run clean:dist && pnpm run clean:modules",
+        "clean": "npm run clean:dist && npm run clean:modules",
         "types:check": "tsc --noEmit",
         "lint": "eslint \"**/*.{ts,tsx,js,jsx}\" --max-warnings=0 --fix --cache",
         "prepare": "husky",
