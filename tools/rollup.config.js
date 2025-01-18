@@ -1,4 +1,5 @@
 import { createRequire } from 'node:module';
+
 import terser from '@rollup/plugin-terser';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
@@ -51,4 +52,6 @@ const browserBundleConfig = [
     },
 ];
 
-export default [...packageBundleConfig, ...browserBundleConfig];
+const config = [...packageBundleConfig, ...browserBundleConfig];
+
+export default config;
