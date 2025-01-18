@@ -1,10 +1,10 @@
-module.exports = {
+const config = {
     rules: {
         'import/order': [
             'error',
             {
                 pathGroupsExcludedImportTypes: ['builtin'],
-                groups: [['builtin', 'external'], ['internal'], ['parent'], ['sibling', 'index']],
+                groups: [['builtin'], ['external'], ['internal'], ['parent'], ['sibling', 'index']],
                 'newlines-between': 'always',
             },
         ],
@@ -28,6 +28,8 @@ module.exports = {
 
                     // Packages tools
                     '**/tools/**/*.js',
+
+                    '**/eslint.config.js',
                 ],
             },
         ],
@@ -49,3 +51,5 @@ module.exports = {
         ],
     },
 };
+
+export default config;

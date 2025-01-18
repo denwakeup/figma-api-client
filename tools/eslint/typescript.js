@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
     extends: ['plugin:@typescript-eslint/recommended'],
     rules: {
         '@typescript-eslint/no-empty-function': 'off',
@@ -28,3 +28,5 @@ module.exports = {
         },
     ],
 };
+
+export default config;

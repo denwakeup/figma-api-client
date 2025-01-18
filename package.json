@@ -1,19 +1,20 @@
 {
     "name": "figma-api-client",
-    "version": "2.0.1",
+    "version": "3.0.0",
     "description": "Figma js typed api",
+    "type": "module",
     "files": [
         "lib"
     ],
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "scripts": {
-        "build": "npm run clean:dist && rollup -c ./tools/rollup.config.mjs",
+        "build": "npm run clean:dist && rollup -c ./tools/rollup.config.js",
         "clean:dist": "npx rimraf lib",
         "clean:modules": "npx rimraf ./node_modules",
         "clean": "pnpm run clean:dist && pnpm run clean:modules",
         "types:check": "tsc --noEmit",
-        "lint": "eslint \"**/*.{ts,tsx,js,jsx}\" --max-warnings=0 --fix --cache --ignore-path .gitignore",
+        "lint": "eslint \"**/*.{ts,tsx,js,jsx}\" --max-warnings=0 --fix --cache",
         "prepare": "husky",
         "prepack": "npm run build"
     },
@@ -34,28 +35,31 @@
         "registry": "https://registry.npmjs.org/"
     },
     "dependencies": {
-        "@figma/rest-api-spec": "^0.15.0",
-        "cross-fetch": "^4.0.0",
-        "query-string": "^7.1.3"
+        "@figma/rest-api-spec": "^0.22.0",
+        "cross-fetch": "^4.1.0",
+        "query-string": "^9.1.1"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^26.0.1",
-        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@eslint/compat": "^1.2.5",
+        "@eslint/eslintrc": "^3.2.0",
+        "@eslint/js": "^9.18.0",
+        "@rollup/plugin-commonjs": "^28.0.2",
+        "@rollup/plugin-node-resolve": "^16.0.0",
         "@rollup/plugin-terser": "0.4.4",
-        "@typescript-eslint/parser": "^5.62.0",
-        "eslint": "^8.57.0",
-        "eslint-config-prettier": "^8.10.0",
-        "eslint-config-react-app": "^7.0.1",
-        "eslint-import-resolver-typescript": "^3.6.1",
-        "eslint-plugin-import": "^2.29.1",
-        "eslint-plugin-prettier": "^5.0.0",
-        "husky": "^9.0.11",
-        "lint-staged": "^15.2.7",
-        "prettier": "^3.3.2",
-        "rimraf": "^5.0.7",
-        "rollup": "^4.0.2",
+        "@typescript-eslint/eslint-plugin": "^8.20.0",
+        "@typescript-eslint/parser": "^8.20.0",
+        "eslint": "^9.18.0",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-import-resolver-typescript": "^3.7.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-prettier": "^5.2.2",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.4.1",
+        "prettier": "^3.4.2",
+        "rimraf": "^6.0.1",
+        "rollup": "^4.30.1",
         "rollup-plugin-ts": "3.4.5",
-        "typescript": "^5.4.5"
+        "typescript": "^5.7.3"
     },
     "repository": {
         "type": "git",
