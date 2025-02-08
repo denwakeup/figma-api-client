@@ -1,6 +1,6 @@
 {
     "name": "figma-api-client",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "Figma js typed api",
     "type": "module",
     "files": [
@@ -63,7 +63,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/denwakeup/figma-api.git"
+        "url": "git+https://github.com/denwakeup/figma-api-client.git"
     },
     "lint-staged": {
         "./{src,tools}/**/*.{js,jsx,ts,tsx,md}": [
