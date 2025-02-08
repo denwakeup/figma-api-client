@@ -58,14 +58,7 @@ export class Api {
 
     getFileNodes = (
         fileKey: string,
-        /**
-         * @deprecated Please use `queryParams.ids` instead
-         * list of node IDs to retrieve and convert
-         */
-        ids: string[],
-        queryParams: Omit<Types.GetFileNodesQueryParams, 'ids'> & { ids: string[] } = {
-            ids,
-        },
+        queryParams: Omit<Types.GetFileNodesQueryParams, 'ids'> & { ids: string[] },
     ): Promise<Types.GetFileNodesResponse> => {
         return this.request(`/files/${fileKey}/nodes`, {
             queryParams,

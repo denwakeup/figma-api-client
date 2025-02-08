@@ -1,6 +1,6 @@
 {
     "name": "figma-api-client",
-    "version": "3.0.1",
+    "version": "4.0.0",
     "description": "Figma js typed api",
     "type": "module",
     "files": [
@@ -35,29 +35,29 @@
         "registry": "https://registry.npmjs.org/"
     },
     "dependencies": {
-        "@figma/rest-api-spec": "^0.22.0",
+        "@figma/rest-api-spec": "^0.23.0",
         "cross-fetch": "^4.1.0",
         "query-string": "^9.1.1"
     },
     "devDependencies": {
-        "@eslint/compat": "^1.2.5",
+        "@eslint/compat": "^1.2.6",
         "@eslint/eslintrc": "^3.2.0",
-        "@eslint/js": "^9.18.0",
+        "@eslint/js": "^9.20.0",
         "@rollup/plugin-commonjs": "^28.0.2",
         "@rollup/plugin-node-resolve": "^16.0.0",
         "@rollup/plugin-terser": "0.4.4",
-        "@typescript-eslint/eslint-plugin": "^8.20.0",
-        "@typescript-eslint/parser": "^8.20.0",
-        "eslint": "^9.18.0",
+        "@typescript-eslint/eslint-plugin": "^8.23.0",
+        "@typescript-eslint/parser": "^8.23.0",
+        "eslint": "^9.20.0",
         "eslint-config-prettier": "^10.0.1",
         "eslint-import-resolver-typescript": "^3.7.0",
         "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-prettier": "^5.2.2",
+        "eslint-plugin-prettier": "^5.2.3",
         "husky": "^9.1.7",
-        "lint-staged": "^15.4.1",
+        "lint-staged": "^15.4.3",
         "prettier": "^3.4.2",
         "rimraf": "^6.0.1",
-        "rollup": "^4.30.1",
+        "rollup": "^4.34.6",
         "rollup-plugin-ts": "3.4.5",
         "typescript": "^5.7.3"
     },
@@ -71,5 +71,5 @@
             "eslint --fix"
         ]
     },
-    "packageManager": "npm@10.7.0"
+    "packageManager": "npm@11.1.0"
 }
