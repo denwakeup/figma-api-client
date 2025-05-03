@@ -35,31 +35,31 @@
         "registry": "https://registry.npmjs.org/"
     },
     "dependencies": {
-        "@figma/rest-api-spec": "^0.23.0",
+        "@figma/rest-api-spec": "^0.29.0",
         "cross-fetch": "^4.1.0",
-        "query-string": "^9.1.1"
+        "query-string": "^9.1.2"
     },
     "devDependencies": {
-        "@eslint/compat": "^1.2.6",
-        "@eslint/eslintrc": "^3.2.0",
-        "@eslint/js": "^9.20.0",
-        "@rollup/plugin-commonjs": "^28.0.2",
-        "@rollup/plugin-node-resolve": "^16.0.0",
+        "@eslint/compat": "^1.2.9",
+        "@eslint/eslintrc": "^3.3.1",
+        "@eslint/js": "^9.26.0",
+        "@rollup/plugin-commonjs": "^28.0.3",
+        "@rollup/plugin-node-resolve": "^16.0.1",
         "@rollup/plugin-terser": "0.4.4",
-        "@typescript-eslint/eslint-plugin": "^8.23.0",
-        "@typescript-eslint/parser": "^8.23.0",
-        "eslint": "^9.20.0",
-        "eslint-config-prettier": "^10.0.1",
-        "eslint-import-resolver-typescript": "^3.7.0",
+        "@typescript-eslint/eslint-plugin": "^8.31.1",
+        "@typescript-eslint/parser": "^8.31.1",
+        "eslint": "^9.26.0",
+        "eslint-config-prettier": "^10.1.2",
+        "eslint-import-resolver-typescript": "^4.3.4",
         "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-prettier": "^5.2.3",
+        "eslint-plugin-prettier": "^5.2.6",
         "husky": "^9.1.7",
-        "lint-staged": "^15.4.3",
-        "prettier": "^3.4.2",
+        "lint-staged": "^15.5.1",
+        "prettier": "^3.5.3",
         "rimraf": "^6.0.1",
-        "rollup": "^4.34.6",
+        "rollup": "^4.40.1",
         "rollup-plugin-ts": "3.4.5",
-        "typescript": "^5.7.3"
+        "typescript": "^5.8.3"
     },
     "repository": {
         "type": "git",
